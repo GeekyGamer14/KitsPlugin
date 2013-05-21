@@ -1,0 +1,14 @@
+name: Kits
+main: com.endercraftservers.geekygamer14.KitPlugin
+version: 1.0
+commands:
+  vipkit:
+    description: Get the VIP kit.
+    usage: /vipkit
+    permission: kits.vip
+    permission-message: You must have VIP status to get this kit!
+  modkit:
+    description: Get the moderator kit.
+    usage: /modkit
+    permission: kits.mod
+    permission-message: You must have Moderator status to get this kit!
