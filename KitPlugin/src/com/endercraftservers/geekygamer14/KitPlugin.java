@@ -30,6 +30,10 @@ public class KitPlugin extends JavaPlugin {
 		PlayerInventory inventory = player.getInventory();
 		if (commandLabel.equalsIgnoreCase("kit")){
 			{
+				if(args.length != 1){
+					sender.sendMessage(ChatColor.RED + "Please enter a kit name.");
+					return true;
+				}
 				if(args[0].equalsIgnoreCase("vip")){
 					sender.sendMessage(ChatColor.GREEN + "You got the VIP kit!");
 					player.playSound(location, Sound.PORTAL_TRAVEL, 10F, 0F);
