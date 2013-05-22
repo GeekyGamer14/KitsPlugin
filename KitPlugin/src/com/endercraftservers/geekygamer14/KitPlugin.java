@@ -54,10 +54,7 @@ public class KitPlugin extends JavaPlugin {
 		Location location = player.getEyeLocation();
 		PlayerInventory inventory = player.getInventory();
 		if (commandLabel.equalsIgnoreCase("kit")){
-			if(cooldowns.contains(player)){
-				sender.sendMessage(ChatColor.RED + "You must wait to use another kit!");
-				return true;
-			}else{
+			if(!cooldowns.contains(player)){
 			{
 				if(args.length != 1){
 					sender.sendMessage(ChatColor.RED + "Please enter a kit name.");
@@ -133,12 +130,14 @@ public class KitPlugin extends JavaPlugin {
 						return true;
 					}
 				}
+				}
 				return true;
 			}
 		}
 		//TODO	player.sendMessage("You have " + pc.getTimeLeft() + " seconds left until you can use a kit." );
-	}
 		return false;
+	}
+	{
 }
 	
 	
