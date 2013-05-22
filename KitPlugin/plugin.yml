@@ -4,6 +4,6 @@ version: 1.0
 commands:
   kit:
     description: Get the VIP kit.
-    usage: /vipkit
-    permission: kits.vip
-    permission-message: You must have VIP status to get this kit!
+    usage: /kit
+    permission: kits.kit
+    permission-message: "You do not have permission to use Kits!"
